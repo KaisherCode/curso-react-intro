@@ -14,13 +14,11 @@ const defaultTodos=[
 ];
 
 function App() {
-  const [todos]=React.useState(defaultTodos);
+  const [todos,setTodos]=React.useState(defaultTodos);
   const [searchValue,setSearchValue]=React.useState('');
   
-  // LOS ESTASOS DERIVADDOS: Son propiedades, variables, cálculos que hacemos a partir de un estado.
-  const completedTodos = todos.filter(todo => !!todo.completed).length; // !! - retorna un boleano
+  const completedTodos = todos.filter(todo => !!todo.completed).length;
   const totalTodos=todos.length;
-  // Filtrar datos en el buscador
   const searchedTodos = todos.filter(
     (todo)=> {
       const todoText = todo.text.toLowerCase();
@@ -28,7 +26,23 @@ function App() {
       return todoText.includes(searchText);
     });
 
-    console.log(`Buscando todos de ${searchValue}`);
+    const completeTodo = (text)=>{
+      const newTodos = [...todos];
+      const todoIndex = newTodos.findIndex(
+        (todo)=>todo.text===text
+      );
+      newTodos[todoIndex].completed=true;
+      setTodos(newTodos);
+    }
+
+    const deleteTodo = (text)=>{
+      const newTodos = [...todos];
+      const todoIndex = newTodos.findIndex(
+        (todo)=>todo.text===text
+      );
+      newTodos.splice(todoIndex,1);
+      setTodos(newTodos);
+    }
 
   return (
     <React.Fragment>
@@ -42,7 +56,10 @@ function App() {
           <TodoItem 
             key={todo.text}
             text={todo.text}
-            completed={todo.completed}/>
+            completed={todo.completed}
+            onComplete={()=>completeTodo(todo.text)}
+            onDelete={()=>deleteTodo(todo.text)}
+          />
         ))}
 
       </TodoList>
