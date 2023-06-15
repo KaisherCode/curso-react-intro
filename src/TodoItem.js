@@ -1,8 +1,8 @@
-function TodoItem(){
+function TodoItem(props){
     return(
         <li>
             <span>✔</span>
-            <p>Aprender curso rect intro</p>
+            <p>{props.text}</p>
             <span>x</span>
         </li>
     )
