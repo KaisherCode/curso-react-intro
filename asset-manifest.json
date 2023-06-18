@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/KaisherCode/curso-react-intro/static/css/main.f9645b88.css",
+    "main.js": "/KaisherCode/curso-react-intro/static/js/main.47e9075f.js",
+    "static/js/787.9310563b.chunk.js": "/KaisherCode/curso-react-intro/static/js/787.9310563b.chunk.js",
+    "index.html": "/KaisherCode/curso-react-intro/index.html",
+    "static/media/trash.svg": "/KaisherCode/curso-react-intro/static/media/trash.d5a2895437d363044d4bf8d9d228f09a.svg",
+    "static/media/check-circle.svg": "/KaisherCode/curso-react-intro/static/media/check-circle.260c56304a89734e6bb8178efe7a1063.svg",
+    "main.f9645b88.css.map": "/KaisherCode/curso-react-intro/static/css/main.f9645b88.css.map",
+    "main.47e9075f.js.map": "/KaisherCode/curso-react-intro/static/js/main.47e9075f.js.map",
+    "787.9310563b.chunk.js.map": "/KaisherCode/curso-react-intro/static/js/787.9310563b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9645b88.css",
+    "static/js/main.47e9075f.js"
+  ]
+}
