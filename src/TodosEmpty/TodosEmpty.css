@@ -1,0 +1,13 @@
+.empty-container{
+    display: grid;
+    min-height: 200px;
+    place-items: center;
+    background: rgb(187, 186, 186);
+    border-radius: 20px;
+}
+.empty-text{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}

@@ -1,10 +1,12 @@
 import React from 'react';
-//import './TodosEmpty.css';
+import './TodosEmpty.css';
 
 function TodosEmpty(){
     
     return(
-        <p>¡Crea tu primer TODO!</p>
+        <div className='empty-container'>
+            <p className="empty-text">¡Crea tu primer TODO!</p>
+        </div>
     )
 }
 export {TodosEmpty};
