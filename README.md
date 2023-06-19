@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# Repositorio del curso de introducción a React.js en Platzi
+
+En este repositorio encontrarás el código de todas las clases del [Curso de introducción a React.js](https://kaishercode.github.io/curso-react-intro/) Para modificar, editar el código debes clonar este repositorio `(git clone)`, instalar sus dependencias `(npm install)` y ejecutar la aplicación `(npm start)`.
+
+La rama principal contiene código del proyecto TODO App. Y en la rama secundaria el deploy de la aplicación.
+¡Mucha suerte aprendiendo React! #NuncaParesDeAprender
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
